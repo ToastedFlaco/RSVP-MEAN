@@ -20,7 +20,7 @@ export class AuthService {
   userProfile: any;
   expiresAt: number;
   // Create a stream of logged in status to communicate throughout app
-  loggedIn: boolean;
+  loggedIn!: boolean;
   loggedIn$ = new BehaviorSubject<boolean>(this.loggedIn);
   loggingIn: boolean;
 
